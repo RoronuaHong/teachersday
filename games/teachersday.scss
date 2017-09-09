@@ -1,0 +1,923 @@
+$imgurl: "http://images.cheertea.com/";
+
+.returntopandpagesum {
+  display: none;
+}
+body{
+  -webkit-overflow-scrolling:touch;
+}
+* {
+  touch-action: manipulation;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#audiobox {
+  overflow: hidden;
+  position: fixed;
+  top: 8%;
+  left: 13%;
+  width: 60px;
+  height: 60px;
+  margin: -40px;
+  line-height: 70px;
+  background: url($imgurl + "audiobox.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  z-index: 11;
+  border-radius: 50%;
+  animation: rotates 2s linear infinite;
+}
+@keyframes rotates {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.removeaudio {
+  background: url($imgurl + "audioboxpause.png") 0 0 no-repeat !important;
+  background-size: 100% 100% !important;
+  animation: rotates 0s linear infinite !important;
+}
+#logobox {
+  position: fixed;
+  top: 0.5%;
+  right: 8%;
+  width: 100px;
+  height: 100px;
+  background: url($imgurl + "newnewlogo.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  z-index: 5;
+}
+.teachertitlebgbox {
+  position: fixed;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 505px;
+  background: url($imgurl + "teachertitle4.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  z-index: 10;
+}
+.showBackbox {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .8);
+  z-index: 1;
+}
+#isDeletes {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url($imgurl + "teacherssharebg3.png");
+  background-size: 100% 100%;
+  z-index: 10000;
+}
+#teachersdaywrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url($imgurl + "teachersdaybg3.jpg");
+  background-size: 100% 100%;
+  .btnbox {
+    position: fixed;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 160px;
+  }
+  .startbtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+    width: 250px;
+    height: 105px;
+    background: url($imgurl + "startbtn.png");
+    background-size: 100% 100%;
+  }
+  .leadbtn {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: url($imgurl + "leaderbtn.png");
+    background-size: 100% 100%;
+  }
+  .rulebtn {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: url($imgurl + "rulebtn.png");
+    background-size: 100% 100%;
+  }
+}
+.leaderbox, .rulebox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 524px;
+  height: 867px;
+  z-index: 10;
+  .innerbox {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 524px;
+    height: 867px;
+    background: white;
+    border-radius: 30px;
+  }
+  .tabul {
+    width: 100%;
+    height: 72px;
+    line-height: 72px;
+    li {
+      float: left;
+      width: 170px;
+      height: 100%;
+      margin-right: 7px;
+      background: #c0bfbe;
+      font-size: 28px;
+      text-align: center;
+      color: #fff;
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+    .lisel {
+      background: #62c5e3;
+    }
+  }
+  .conul {
+    width: 90%;
+    margin: 0 auto;
+    .cons {
+      display: none;
+      width: 100%;
+      h3 {
+        width: 100%;
+        padding: 39px 0;
+      }
+      .title {
+        padding: 10px 20px;
+        background: #f8b62c;
+        font-size: 28px;
+        color: #fff;
+        border-radius: 30px;
+      }
+    }
+    .showcons {
+      display: block;
+    }
+    .meta {
+      width: 100%;
+      margin-bottom: 10px;
+      border-left: 7px solid #62c5e2;
+      font-size: 26.38px;
+      text-indent: .5em;
+      color: #62c5e2;
+    }
+    .activity {
+      width: 90%;
+      margin: 0 auto;
+      padding-bottom: 50px;
+      font-size: 23.57px;
+      color: #231815;
+      span {
+        color: #c82d51;
+      }
+    }
+    .explain {
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+  .closebtn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    background: #62c5e3;
+    font-size: 25.25px;
+    text-align: center;
+    color: #fff;
+  }
+  /*我的奖品页面*/
+  .myprizebox {
+    width: 80%;
+    height: 46px;
+    margin: 0 auto;
+    padding: 32px 0 45px;
+    line-height: 46px;
+    font-size: 25.08px;
+    color: #fff;
+    .actprize {
+      float: left;
+      width: 183px;
+      height: 46px;
+      background: #c0bfbe url($imgurl + "myprize01.png") 0.1rem 0 no-repeat;
+      background-size: contain;
+      text-indent: 2.25em;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .myprize {
+      float: right;
+      width: 183px;
+      height: 46px;
+      background: #c0bfbe url($imgurl + "myprize2.png") 0.1rem 0 no-repeat;
+      background-size: contain;
+      text-indent: 2.25em;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .add1 {
+      background: #62c5e3 url($imgurl + "myprize01.png") 0.1rem 0 no-repeat;
+      background-size: contain;
+    }
+    .add2 {
+      background: #62c5e3 url($imgurl + "myprize2.png") 0.1rem 0 no-repeat;
+      background-size: contain;
+    }
+  }
+  .rewards {
+    width: 85%;
+    margin: 0 auto;
+    padding-left: 10%;
+    font-size: 23.88px;
+    color: #727171;
+    background: url($imgurl + "attentionicon.png") 0 0 no-repeat;
+    background-size: 8%;
+  }
+  .times {
+    width: 100%;
+    padding: 10px 0 32px;
+    font-size: 20.09px;
+    text-align: center;
+    color: #62c5e2;
+  }
+  .rewardtab {
+    width: 100%;
+    .tit {
+      float: left;
+      width: 50%;
+      height: 72px;
+      line-height: 72px;
+      font-size: 23.88px;
+      text-align: center;
+      border-bottom: 2px solid #c4c4c4;
+      color: #62c5e2;
+    }
+    .titsel {
+      position: relative;
+      border-bottom: 2px solid #62c5e2;
+    }
+    .titsel:after {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      display : block;
+      content : " ";
+      width: 0;
+      height: 0;
+      margin-left: -10px;
+      border: 10px solid transparent;
+      border-bottom-color: #62c5e3;
+    }
+  }
+  .rewardcon {
+    overflow-y: auto;
+    width: 100%;
+    height: 360px;
+    padding-top: 20px;
+    .con {
+      display: none;
+      width: 100%;
+    }
+    .consel {
+      display: block;
+    }
+  }
+  .voucher {
+    position: relative;
+    width: 100%;
+    height: 167px;
+    margin: 15px 0;
+    box-shadow: inset 0 0 0 2px #d7d8d9;
+    .imgbox {
+      float: left;
+      width: 35%;
+      height: 165px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .rightcon {
+      float: left;
+      width: 60%;
+      padding-left: 5%;
+    }
+    .name {
+      float: left;
+      width: 100%;
+      line-height: 40px;
+      font-size: 21.49px;
+      color: #231815;
+    }
+    .picprice {
+      position: absolute;
+      top: 32%;
+      left: 1.5%;
+      width: 150px;
+      height: 30px;
+      font-size: 24px;
+      text-align: center;
+      color: #e83928;
+    }
+    .price {
+      position: absolute;
+      top: 55%;
+      left: 1.5%;
+      width: 150px;
+      height: 50px;
+      font-size: 20px;
+      text-align: center;
+      color: #e83928;
+    }
+    .number {
+      display: none;
+      float: left;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      font-size: 21.49px;
+      color: #595757;
+    }
+  }
+  /*排行榜*/
+  .leadtab {
+    width: 100%;
+    height: 83px;
+    li {
+      float: left;
+      width: 100%;
+      height: 100%;
+      line-height: 83px;
+      font-size: 30.65px;
+      text-align: center;
+      text-indent: 1em;
+      color: #101519;
+    }
+    .first {
+      background: url($imgurl + "leadicon1.png") .5rem center no-repeat;
+      background-size: 15%;
+      border-bottom: 2px solid #c4c4c4;
+    }
+    /*.second {
+      background: url($imgurl + "leadicon2.png") .5rem center no-repeat;
+      background-size: 15%;
+      border-bottom: 2px solid #c4c4c4;
+    }*/
+    .firstsel {
+      background: url($imgurl + "leadicon11.png") .5rem center no-repeat;
+      background-size: 15%;
+      border-bottom: 2px solid #636261;
+      color: #62c5e2;
+    }
+    /*.secondsel {
+      background: url($imgurl + "leadicon22.png") .5rem center no-repeat;
+      background-size: 15%;
+      border-bottom: 2px solid #636261;
+      color: #62c5e2;
+    }*/
+  }
+  .topofscore {
+    width: 100%;
+    padding-top: 15px;
+    line-height: 50px;
+    font-size: 24.52px;
+    text-align: center;
+    color: #62c5e2;
+  }
+  .leadconbox {
+    overflow-y: auto;
+    width: 100%;
+    height: 8.5rem;
+  }
+  .firstbox, .secondbox {
+    overflow: auto;
+    width: 100%;
+    height: 8rem;
+    li {
+      width: 94%;
+      height: 101px;
+      margin: 0 auto;
+      border-bottom: 2px solid #b5b5b5;
+      .num {
+        float: left;
+        width: 70px;
+        height: 101px;
+        line-height: 101px;
+        font-size: 18.39px;
+        text-align: center;
+        color: #8a8a8a;
+      }
+      .imgboxs {
+        float: left;
+        width: 86px;
+        height: 86px;
+        margin: 8px 30px 0 20px;
+        border-radius: 50%;
+      }
+      .rightcons {
+        float: left;
+        width: 54%;
+        height: 101px;
+      }
+      .names {
+        width: 100%;
+        height: 45px;
+        padding-top: 10px;
+        line-height: 45px;
+        font-size: 24.52px;
+        color: #101519;
+      }
+      .details {
+        overflow: hidden;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20.23px;
+        color: #101519;
+        span {
+          color: #c82d51;
+        }
+      }
+    }
+    li:first-child .num {
+      font-size: 0;
+      background: url($imgurl + "firstaward1.png") center center no-repeat;
+      background-size: 65%;
+    }
+    li:nth-child(2) .num {
+      font-size: 0;
+      background: url($imgurl + "firstaward2.png") center center no-repeat;
+      background-size: 65%;
+    }
+    li:nth-child(3) .num {
+      font-size: 0;
+      background: url($imgurl + "firstaward3.png") center center no-repeat;
+      background-size: 65%;
+    }
+  }
+/*  .firstbox {
+    display: none;
+  }*/
+}
+.awardlistbox {
+  overflow: auto;
+  display: none;
+  width: 100%;
+  height: 4.8rem;
+  #awardimg {
+    float: left;
+    width: 65px;
+    height: 65px;
+    margin: .2rem 0 0 0.4rem;
+    border-radius: 50%;
+  }
+  li {
+    width: 100%;
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: keep-all;
+      white-space: nowrap;
+      float: left;
+      width: 25%;
+      height: 75px;
+      line-height: 75px;
+      font-size: 29.17px;
+      text-align: center;
+      color: #f8b62c;
+    }
+  }
+}
+.titleul {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    font-size: 25px;
+    text-align: center;
+    color: #181919;
+  }
+}
+.awardlist {
+  width: 100%;
+}
+.noaward {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 23.41px;
+  color: #62c5e2;
+}
+.rewardbox {
+  width: 100%;
+}
+.randombox {
+  overflow-y: auto;
+  display: none;
+  width: 100%;
+  height: 420px;
+}
+/*大大恭喜你*/
+.bigcelebratebox, .bigshamebox {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url($imgurl + "bigbelebratebg4.png") center center no-repeat;
+  background-size: 90% 100%;
+  z-index: 2;
+  .gradebox {
+    overflow: hidden;
+    position: absolute;
+    top: 3.1rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 57%;
+    height: 180px;
+    text-align: center;
+    .nowgrade, .topscore, .toplead {
+      width: 100%;
+      height: 35px;
+      line-height: 35px;
+      font-size: 24px;
+      color: #fff;
+    }
+    .percent {
+      width: 100%;
+      height: 35px;
+      line-height: 35px;
+      font-size: 24px;
+      color: #f39800;
+    }
+  }
+  .prizebox {
+    position: fixed;
+    top: 8.4rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    li {
+      float: left;
+      width: 50%;
+      height: 60px;
+      font-size: 27.02px;
+      text-align: right;
+      color: #fff;
+    }
+    .leftbox {
+      background: url($imgurl + "myprize01.png") 0.1rem 0.1rem no-repeat;
+      background-size: 25%;
+    }
+    .rightbox {
+      background: url($imgurl + "myprize2.png") 0.1rem 0.1rem no-repeat;
+      background-size: 25%;
+    }
+  }
+  .againbtn {
+    position: fixed;
+    top: 10.2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    background: #e9c62e;
+    border-radius: 15px;
+    font-size: 30.88px;
+    text-align: center;
+    box-shadow: inset 0 -10px 0 0 #c48f19;
+    color: #fff;
+  }
+  .otherbtn {
+    position: fixed;
+    top: 86.5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 300px;
+    .newleadbtn {
+      float: left;
+      width: 120px;
+      height: 60px;
+      line-height: 60px;
+      background: #fff100;
+      font-size: 25.73px;
+      text-align: center;
+      color: #e60012;
+      box-shadow: inset 0 -10px 0 0 #f39700;
+      border-radius: 15px;
+    }
+    .findfriends {
+      float: right;
+      width: 130px;
+      height: 60px;
+      line-height: 60px;
+      background: #fff100;
+      font-size: 25.73px;
+      text-align: center;
+      color: #e60012;
+      box-shadow: inset 0 -10px 0 0 #f39700;
+      border-radius: 15px;
+    }
+  }
+}
+.bigshamebox {
+  background: url($imgurl + "bigshamebg4.png") center center no-repeat;
+  background-size: 90% 100%;
+}
+.newchacha {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+}
+.smallshamebox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 400px;
+  background: url($imgurl + "smallshamebox2.png") center center no-repeat;
+  background-size: contain;
+  z-index: 2;
+  .texts {
+    position: absolute;
+    top: .2rem;
+    left: -25px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #d30f00;
+  }
+  .textss {
+    position: absolute;
+    top: 3.4rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+    color: #810a01;
+  }
+}
+.smallcelebratebox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 400px;
+  background: url($imgurl + "smallcelebratebox2.png") center center no-repeat;
+  background-size: contain;
+  z-index: 2;
+  .smallbtn {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 25px;
+    bottom: 0;
+    margin: auto;
+    width: 210px;
+    height: 50px;
+    line-height: 50px;
+    background: #f49700;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .lastnumber, .texts {
+    position: absolute;
+    top: 4.2rem;
+    left: 0;
+    right: 25px;
+    bottom: 0;
+    margin: auto;
+    width: 210px;
+    height: 80px;
+    font-size: 16px;
+    text-align: center;
+    color: #d30f00;
+  }
+  .texts {
+    top: .2rem;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+#teachersdaystart {
+  display: none;
+  width: 100%;
+  height: 100%;
+  .maintitle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+  }
+  .countdown {
+    float: left;
+    width: 30%;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    color: #f49700;
+  }
+  .totalscore {
+    float: right;
+    width: 20%;
+    font-size: 30px;
+    text-align: center;
+    color: #f5003d;
+  }
+  /*游戏主画面*/
+  .biggamebox {
+    width: 100%;
+    height: 90%;
+    padding-top: 10%;
+    .mainbox {
+      position: relative;
+      width: 100%;
+      height: 33.33%;
+      background: url($imgurl + "maingamebg3.gif") 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .role {
+      position: absolute;
+      width: 95px;
+      height: 145px;
+      background: url($imgurl + "students2.gif") center center no-repeat;
+      background-size: 230% 175%;
+      transform: translate3d(2rem, 0, 0);
+    }
+  }
+}
+#drawwrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url($imgurl + "teachersdrawbg2.gif") 0 0 no-repeat;
+  background-size: 100% 100%;
+  z-index: 101;
+  .showPrizebox {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: url($imgurl + "getprizebg.png") 0 0 no-repeat;
+    background-size: 100% 100%;
+    z-index: 102;
+  }
+  .congratulate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+    .congratu {
+      width: 100%;
+      height: 100px;
+      line-height: 100px;
+      font-size: 68.48px;
+      text-align: center;
+      color: #ffe915;
+    }
+    .prizethings {
+      width: 100%;
+      line-height: 65px;
+      font-size: 36px;
+      text-align: center;
+      color: #fb1717;
+    }
+    .prizedetail {
+      width: 100%;
+      line-height: 65px;
+      font-size: 24px;
+      text-align: center;
+      color: #fb1717;
+    }
+    .attention {
+      width: 100%;
+      height: 70px;
+      line-height: 70px;
+      font-size: 32.02px;
+      text-align: center;
+      color: #ffd015;
+    }
+  }
+  .getPrizebox {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 78%;
+    height: 46%;
+    margin: auto;
+    li {
+      float: left;
+      width: 30%;
+      height: 30%;
+      padding: 1.5%;
+      background: url($imgurl + "drawthankbg.png") 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    li:nth-child(5) {
+      background: url($imgurl + "drawsmailbg.png") 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .addli {
+      background: url($imgurl + "drawselectbg.png") 0 0 no-repeat;
+      background-size: 100% 100%;
+    }
+    .showli {
+      opacity: .4;
+    }
+  }
+}
+

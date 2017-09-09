@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>师恩难忘</title>
+    <link rel="stylesheet" href="http://css.cheertea.com/commons.css">
+    <!--<link rel="stylesheet" href="../css/teachersday.css">-->
+    <link rel="stylesheet" href="http://css.cheertea.com/teachersday.css">
+    <link rel="stylesheet" href="http://css.cheertea.com/animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <div id="audiobox">
+        <audio src="http://images.cheertea.com/teachersday1.mp3" tabindex="0" loop="loop" autoplay="true"></audio>
+    </div>
+    <div id="logobox"></div>
+    <div class="teachertitlebgbox"></div>
+    <div class="showBackbox"></div>
+    <div id="isDeletes"></div>
+    <div class="smallcelebratebox">
+        <div class="newchacha"></div>
+        <p class="texts">诱人的奖品正在向你挥手，还不速去抽奖？</p>
+        <div class="smallbtn">抽奖</div>
+        <p class="lastnumber">
+            你还有<span class="have"></span>次抽奖机会<br>
+        </p>
+    </div>
+    <div class="smallshamebox">
+        <div class="newchacha"></div>
+        <p class="texts">
+            哎呀，您本次的成绩暂与10擦肩而过<br>
+            失去一次抽奖机会
+        </p>
+        <p class="textss">
+            小伙伴们莫灰心呀，革命尚未落幕，<br>
+            咱们还需努力呦，就看好你哈！
+        </p>
+    </div>
+    <div class="bigcelebratebox">
+        <div class="gradebox">
+            <p class="nowgrade">本次成绩: <span class="grade">00</span></p>
+            <p class="percent">比<span class="newnum">82</span>的小伙伴都棒</p>
+            <p class="topscore">最高成绩: <span class="top">25</span></p>
+            <p class="toplead">活动排名: <span class="actlead">25</span></p>
+        </div>
+        <ul class="prizebox clearfix">
+            <li class="leftbox">活动奖品</li>
+            <li class="rightbox">我的奖品</li>
+        </ul>
+        <div class="againbtn">再玩一次</div>
+        <div class="otherbtn clearfix">
+            <div class="newleadbtn">排行榜</div>
+            <div class="findfriends">找朋友PK</div>
+        </div>
+    </div>
+    <div class="bigshamebox">
+        <div class="gradebox">
+            <p class="nowgrade">本次成绩: <span class="grade">00</span></p>
+            <p class="percent">比<span class="newnum"></span>的小伙伴都棒</p>
+            <p class="topscore">最高成绩: <span class="top">25</span></p>
+            <p class="toplead">活动排名: <span class="actlead">25</span></p>
+        </div>
+        <ul class="prizebox clearfix">
+            <li class="leftbox">活动奖品</li>
+            <li class="rightbox">我的奖品</li>
+        </ul>
+        <div class="againbtn">再玩一次</div>
+        <div class="otherbtn clearfix">
+            <div class="newleadbtn">排行榜</div>
+            <div class="findfriends">找朋友PK</div>
+        </div>
+    </div>
+    <div class="leaderbox">
+        <div class="innerbox">
+            <ul class="leadtab clearfix">
+                <li class="first firstsel">排行榜</li>
+                <!--<li class="second">好友排行</li>-->
+            </ul>
+            <p class="topofscore">
+                您当前最高成绩是<span class="scorenum">?</span>个</br>
+                全国排名NO.<span class="alllead">?</span>（只显示前200名）</br>
+                以下排名列表
+            </p>
+            <div class="leadconbox">
+                <!--<ul class="secondbox">-->
+                    <!--<li class="clearfix">-->
+                        <!--<span class="num">No.1</span>-->
+                        <!--<img src="http://images.cheertea.com/choujiangbg.png" alt="" class="imgboxs">-->
+                        <!--<div class="rightcons">-->
+                            <!--<p class="names">清雅源巨柚~</p>-->
+                            <!--<p class="details">玩了<span class="nums">500</span>次，最高纪录<span class="topnum">1000</span>个</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="clearfix">-->
+                        <!--<span class="num">No.2</span>-->
+                        <!--<img src="http://images.cheertea.com/choujiangbg.png" alt="" class="imgboxs">-->
+                        <!--<div class="rightcons">-->
+                            <!--<p class="names">清雅源巨柚~</p>-->
+                            <!--<p class="details">玩了<span class="nums">500</span>次，最高纪录<span class="topnum">1000</span>个</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="clearfix">-->
+                        <!--<span class="num">No.3</span>-->
+                        <!--<img src="http://images.cheertea.com/choujiangbg.png" alt="" class="imgboxs">-->
+                        <!--<div class="rightcons">-->
+                            <!--<p class="names">清雅源巨柚~</p>-->
+                            <!--<p class="details">玩了<span class="nums">500</span>次，最高纪录<span class="topnum">1000</span>个</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="clearfix">-->
+                        <!--<span class="num">No.4</span>-->
+                        <!--<img src="http://images.cheertea.com/choujiangbg.png" alt="" class="imgboxs">-->
+                        <!--<div class="rightcons">-->
+                            <!--<p class="names">清雅源巨柚~</p>-->
+                            <!--<p class="details">玩了<span class="nums">500</span>次，最高纪录<span class="topnum">1000</span>个</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="clearfix">-->
+                        <!--<span class="num">No.5</span>-->
+                        <!--<img src="http://images.cheertea.com/choujiangbg.png" alt="" class="imgboxs">-->
+                        <!--<div class="rightcons">-->
+                            <!--<p class="names">清雅源巨柚~</p>-->
+                            <!--<p class="details">玩了<span class="nums">500</span>次，最高纪录<span class="topnum">1000</span>个</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="clearfix">-->
+                        <!--<span class="num">No.6</span>-->
+                        <!--<img src="http://images.cheertea.com/choujiangbg.png" alt="" class="imgboxs">-->
+                        <!--<div class="rightcons">-->
+                            <!--<p class="names">清雅源巨柚~</p>-->
+                            <!--<p class="details">玩了<span class="nums">500</span>次，最高纪录<span class="topnum">1000</span>个</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="clearfix">-->
+                        <!--<span class="num">No.7</span>-->
+                        <!--<img src="http://images.cheertea.com/choujiangbg.png" alt="" class="imgboxs">-->
+                        <!--<div class="rightcons">-->
+                            <!--<p class="names">清雅源巨柚~</p>-->
+                            <!--<p class="details">玩了<span class="nums">500</span>次，最高纪录<span class="topnum">1000</span>个</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                <!--</ul>-->
+                <ul class="firstbox">
+                    <!--<li class="clearfix">-->
+                        <!--<span class="num">No.7</span>-->
+                        <!--<img src="http://images.cheertea.com/choujiangbg.png" alt="" class="imgboxs">-->
+                        <!--<div class="rightcons">-->
+                            <!--<p class="names">清雅源巨柚~</p>-->
+                            <!--<p class="details">玩了<span class="nums">50</span>次，最高纪录<span class="topnum">101</span>个</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="clearfix">-->
+                        <!--<span class="num">No.7</span>-->
+                        <!--<img src="http://images.cheertea.com/choujiangbg.png" alt="" class="imgboxs">-->
+                        <!--<div class="rightcons">-->
+                            <!--<p class="names">清雅源巨柚~</p>-->
+                            <!--<p class="details">玩了<span class="nums">50</span>次，最高纪录<span class="topnum">101</span>个</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li class="clearfix">-->
+                        <!--<span class="num">No.7</span>-->
+                        <!--<img src="http://images.cheertea.com/choujiangbg.png" alt="" class="imgboxs">-->
+                        <!--<div class="rightcons">-->
+                            <!--<p class="names">清雅源巨柚~</p>-->
+                            <!--<p class="details">玩了<span class="nums">50</span>次，最高纪录<span class="topnum">101</span>个</p>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <div class="closebtn">关闭</div>
+        </div>
+    </div>
+    <div class="rulebox">
+        <div class="innerbox">
+            <ul class="tabul clearfix">
+                <li class="lisel">活动规则</li>
+                <li>活动奖品</li>
+                <li>邀请有礼</li>
+            </ul>
+            <div class="conul">
+                <div class="cons showcons">
+                    <h3>
+                        <span class="title">活动规则</span>
+                    </h3>
+                    <div class="meta">活动规则</div>
+                    <p class="activity">活动结束后，会根据排行榜成绩进行派奖。</p>
+                    <div class="meta">按随机抽奖</div>
+                    <p class="activity">每次玩游戏时，所获得的成绩满足<span>10</span>，每人即可抽奖一次，每人总共可抽奖<span>27次</span>，每天可抽奖<span>3次</span>。</p>
+                    <div class="meta">主办单位</div>
+                    <p class="activity">厦门清雅源实业有限公司（巨柚平台）</p>
+                    <p class="explain">
+                        本次活动在法律允许的范围内</br>
+                        厦门清雅源实业有限公司保留对这次活动的最终解释权
+                    </p>
+                </div>
+                <div class="cons">
+                    <div class="myprizebox clearfix">
+                        <div class="actprize add1">活动奖品</div>
+                        <div class="myprize">我的奖品</div>
+                    </div>
+                    <p class="rewards">获奖后凭兑换码或进驻商城扫二维码即可兑换</p>
+                    <p class="times">兑换时间：2017.09.10—2017.09.18</p>
+                    <div class="rewardbox">
+                        <div class="rewardtab clearfix">
+                            <div class="tit titsel">排名中奖</div>
+                            <div class="tit">随机抽奖</div>
+                        </div>
+                        <div class="rewardcon">
+                            <div class="con consel">
+                                <!--<dl class="voucher clearfix">-->
+                                    <!--<a href="">-->
+                                        <!--<dt class="imgbox">-->
+                                            <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                        <!--</dt>-->
+                                        <!--<dd class="rightcon">-->
+                                            <!--<p class="name">1000元代金券</p>-->
+                                            <!--<p class="number">数量: <span>200</span></p>-->
+                                        <!--</dd>-->
+                                    <!--</a>-->
+                                <!--</dl>-->
+                                <!--<dl class="voucher clearfix">-->
+                                    <!--<a href="">-->
+                                        <!--<dt class="imgbox">-->
+                                            <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                        <!--</dt>-->
+                                        <!--<dd class="rightcon">-->
+                                            <!--<p class="name">1000元代金券</p>-->
+                                            <!--<p class="number">数量: <span>200</span></p>-->
+                                        <!--</dd>-->
+                                    <!--</a>-->
+                                <!--</dl>-->
+                                <!--<dl class="voucher clearfix">-->
+                                    <!--<a href="">-->
+                                        <!--<dt class="imgbox">-->
+                                            <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                        <!--</dt>-->
+                                        <!--<dd class="rightcon">-->
+                                            <!--<p class="name">1000元代金券</p>-->
+                                            <!--<p class="number">数量: <span>200</span></p>-->
+                                        <!--</dd>-->
+                                    <!--</a>-->
+                                <!--</dl>-->
+                                <!--<dl class="voucher clearfix">-->
+                                    <!--<a href="">-->
+                                        <!--<dt class="imgbox">-->
+                                            <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                        <!--</dt>-->
+                                        <!--<dd class="rightcon">-->
+                                            <!--<p class="name">1000元代金券</p>-->
+                                            <!--<p class="number">数量: <span>200</span></p>-->
+                                        <!--</dd>-->
+                                    <!--</a>-->
+                                <!--</dl>-->
+                                <!--<dl class="voucher clearfix">-->
+                                    <!--<a href="">-->
+                                        <!--<dt class="imgbox">-->
+                                            <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                        <!--</dt>-->
+                                        <!--<dd class="rightcon">-->
+                                            <!--<p class="name">1000元代金券</p>-->
+                                            <!--<p class="number">数量: <span>200</span></p>-->
+                                        <!--</dd>-->
+                                    <!--</a>-->
+                                <!--</dl>-->
+                                <!--<dl class="voucher clearfix">-->
+                                    <!--<a href="">-->
+                                        <!--<dt class="imgbox">-->
+                                            <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                        <!--</dt>-->
+                                        <!--<dd class="rightcon">-->
+                                            <!--<p class="name">1000元代金券</p>-->
+                                            <!--<p class="number">数量: <span>200</span></p>-->
+                                        <!--</dd>-->
+                                    <!--</a>-->
+                                <!--</dl>-->
+                            </div>
+                            <div class="con">
+                                <!--<dl class="voucher clearfix">-->
+                                    <!--<a href="">-->
+                                        <!--<dt class="imgbox">-->
+                                            <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                        <!--</dt>-->
+                                        <!--<dd class="rightcon">-->
+                                            <!--<p class="name">10001元代金券</p>-->
+                                            <!--<p class="number">数量: <span>2001</span></p>-->
+                                        <!--</dd>-->
+                                    <!--</a>-->
+                                <!--</dl>-->
+                                <!--<dl class="voucher clearfix">-->
+                                    <!--<a href="">-->
+                                        <!--<dt class="imgbox">-->
+                                            <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                        <!--</dt>-->
+                                        <!--<dd class="rightcon">-->
+                                            <!--<p class="name">10001元代金券</p>-->
+                                            <!--<p class="number">数量: <span>2001</span></p>-->
+                                        <!--</dd>-->
+                                    <!--</a>-->
+                                <!--</dl>-->
+                                <!--<dl class="voucher clearfix">-->
+                                    <!--<a href="">-->
+                                        <!--<dt class="imgbox">-->
+                                            <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                        <!--</dt>-->
+                                        <!--<dd class="rightcon">-->
+                                            <!--<p class="name">1000元代金券</p>-->
+                                            <!--<p class="number">数量: <span>200</span></p>-->
+                                        <!--</dd>-->
+                                    <!--</a>-->
+                                <!--</dl>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="randombox">
+                        <!--<dl class="voucher clearfix">-->
+                            <!--<a href="">-->
+                                <!--<dt class="imgbox">-->
+                                    <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                <!--</dt>-->
+                                <!--<dd class="rightcon">-->
+                                    <!--<p class="name">1000元代金券</p>-->
+                                    <!--<p class="number">数量: <span>200</span></p>-->
+                                <!--</dd>-->
+                            <!--</a>-->
+                        <!--</dl>-->
+                        <!--<dl class="voucher clearfix">-->
+                            <!--<a href="">-->
+                                <!--<dt class="imgbox">-->
+                                    <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                <!--</dt>-->
+                                <!--<dd class="rightcon">-->
+                                    <!--<p class="name">1000元代金券</p>-->
+                                    <!--<p class="number">数量: <span>200</span></p>-->
+                                <!--</dd>-->
+                            <!--</a>-->
+                        <!--</dl>-->
+                        <!--<dl class="voucher clearfix">-->
+                            <!--<a href="">-->
+                                <!--<dt class="imgbox">-->
+                                    <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                <!--</dt>-->
+                                <!--<dd class="rightcon">-->
+                                    <!--<p class="name">1000元代金券</p>-->
+                                    <!--<p class="number">数量: <span>200</span></p>-->
+                                <!--</dd>-->
+                            <!--</a>-->
+                        <!--</dl>-->
+                        <!--<dl class="voucher clearfix">-->
+                            <!--<a href="">-->
+                                <!--<dt class="imgbox">-->
+                                    <!--<img src="http://images.cheertea.com/voucherimg.png" alt="">-->
+                                <!--</dt>-->
+                                <!--<dd class="rightcon">-->
+                                    <!--<p class="name">1000元代金券</p>-->
+                                    <!--<p class="number">数量: <span>200</span></p>-->
+                                <!--</dd>-->
+                            <!--</a>-->
+                        <!--</dl>-->
+                    </div>
+                </div>
+                <div class="cons">
+                    <h3>
+                        <span class="title">活动规则</span>
+                    </h3>
+                    <p class="activity">活动结束后，会根据排行榜成绩进行派奖。</p>
+                    <h3>
+                        <span class="title">获奖记录</span>
+                    </h3>
+                    <div class="awardlistbox">
+                        <ul class="titleul">
+                            <li>昵称</li>
+                            <li>头像</li>
+                            <li>邀请人数</li>
+                            <li>抽奖次数</li>
+                        </ul>
+                        <ul class="awardlist">
+                            <!--<li class="clearfix">-->
+                                <!--<span class="awardname">拾脚印</span>-->
+                                <!--<span>-->
+                                    <!--<img src="" alt="" id="awardimg">-->
+                                <!--</span>-->
+                                <!--<span class="invokenum">6</span>-->
+                                <!--<span class="drawnum">2</span>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                    <p class="noaward">暂无获奖记录！</p>
+                </div>
+            </div>
+            <div class="closebtn">关闭</div>
+        </div>
+    </div>
+    <div id="teachersdaywrap">
+        <div class="btnbox">
+            <div class="startbtn"></div>
+            <div class="leadbtn"></div>
+            <div class="rulebtn"></div>
+        </div>
+    </div>
+    <div id="teachersdaystart">
+        <div class="maintitle clearfix">
+            <span class="countdown"></span>
+            <span class="totalscore"><span>0</span>分</span>
+        </div>
+        <div class="biggamebox">
+            <div class="mainbox">
+                <!--<div class="role"></div>-->
+            </div>
+            <div class="mainbox">
+
+            </div>
+            <div class="mainbox">
+
+            </div>
+        </div>
+    </div>
+    <div id="drawwrap">
+        <div class="showPrizebox">
+            <div class="congratulate">
+                <p class="congratu">恭喜你获得</p>
+                <p class="prizethings"></p>
+                <p class="prizedetail" style="display: none;"></p>
+                <p class="attention">(请在活动时间内前往指定点领取)</p>
+            </div>
+        </div>
+        <ul class="getPrizebox clearfix">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" charset="UTF-8"></script>
+    <script src="http://js.cheertea.com/newcommon.js"></script>
+    <script src="http://js.cheertea.com/teachersday.js"></script>
+     <!--<script src="../js/newcommon.js"></script>-->
+     <!--<script src="../js/teachersday.js"></script>-->
+</body>
+</html>
